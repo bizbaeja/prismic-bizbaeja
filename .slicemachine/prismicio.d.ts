@@ -42,6 +42,17 @@ interface ArticleDocumentData {
      */
     featuredImage: prismicT.ImageField<never>;
     /**
+     * color field in *Article*
+     *
+     * - **Field Type**: Color
+     * - **Placeholder**: *None*
+     * - **API ID Path**: article.color
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/color
+     *
+     */
+    color: prismicT.ColorField;
+    /**
      * Slice Zone field in *Article*
      *
      * - **Field Type**: Slice Zone
