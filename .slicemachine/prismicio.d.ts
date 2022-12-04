@@ -103,6 +103,39 @@ interface NavigationDocumentData {
      *
      */
     links: prismicT.GroupField<Simplify<NavigationDocumentDataLinksItem>>;
+    /**
+     * image field in *Navigation*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: navigation.image
+     * - **Tab**: java-script
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+    /**
+     * code field in *Navigation*
+     *
+     * - **Field Type**: Embed
+     * - **Placeholder**: *None*
+     * - **API ID Path**: navigation.code
+     * - **Tab**: java-script
+     * - **Documentation**: https://prismic.io/docs/core-concepts/embed
+     *
+     */
+    code: prismicT.EmbedField;
+    /**
+     * link field in *Navigation*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: navigation.link
+     * - **Tab**: java-script
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    link: prismicT.LinkField;
 }
 /**
  * Item in Navigation → Links
@@ -139,7 +172,7 @@ export interface NavigationDocumentDataLinksItem {
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type NavigationDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<NavigationDocumentData>, "navigation", Lang>;
+export type NavigationDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<NavigationDocumentData>, "navigation", Lang>;
 /** Content for Page documents */
 interface PageDocumentData {
     /**

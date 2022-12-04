@@ -39,6 +39,38 @@
           }
         }
       }
+    },
+    "java-script": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "code": {
+        "type": "Embed",
+        "config": {
+          "label": "code",
+          "placeholder": ""
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "link",
+          "placeholder": "",
+          "select": null
+        }
+      }
     }
   }
 }
